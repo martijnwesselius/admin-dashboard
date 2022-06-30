@@ -4,7 +4,7 @@
     /* https://tailwindcss.com/docs/customizing-colors */
     --background-grey: #e5e7eb; /*grey 200*/
     --text-grey: #9ca3af; /*grey 400*/
-    --shadow: #6b7280; /*grey 500*/
+    --shadow: rgba(156, 163, 175, 0.8); /* dark grey 400*/
     --accent-blue: #3b82f6; /*blue 500*/
     --accent-pink: #FF10F0; /*neon pink*/
 }
@@ -30,7 +30,7 @@ body {
 .header {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    padding: 1rem 2rem;
+    padding: 1rem 4rem;
     
 }
 
@@ -42,6 +42,19 @@ body {
     display: grid;
     grid-template-columns: 3fr 1fr;
     align-items: center;
+    margin-bottom: 2rem;
+}
+
+.header-top .icon  {
+    height: 1.5rem;
+}
+
+#magnifier {
+    height: 2rem;
+}
+
+.header-top .avatar {
+    height: 3rem;
 }
 
 .header-bottom {
@@ -50,13 +63,17 @@ body {
     align-items: center;
 }
 
+.header-bottom .avatar {
+    height: 5rem;
+}
+
 .search-container,
 .account-container,
 .greeting-container, 
 .button-container {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .account-container,
@@ -64,8 +81,35 @@ body {
     justify-content: end;
 }
 
+
+input[type="search"] {
+    width: 35vw;
+    background-color: var(--background-grey);
+    border: none;
+    border-radius: 3rem;
+    padding: 0.5rem 2rem;
+}
+
+.account-container p {
+    font-weight: bold;
+}
+
+#large-account-name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 button {
+    border: none;
+    appearance: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
     background-color: var(--accent-blue);
+    padding: 0.5rem 2rem;
+    border-radius: 3rem;
 }
 
 
@@ -126,7 +170,7 @@ button {
     gap: 2rem;
     padding: 2rem;
     background-color: var(--background-grey);
-    box-shadow: 0 5px 10px 0 var(--shadow) inset;
+    box-shadow: 0 2px 4px 0 var(--shadow) inset;
 }
 
 .card {
@@ -148,15 +192,33 @@ button {
 }
 
 #projects .card {
-    padding: 1rem;
+    /* height: max-content; */
+    padding: 2rem;
     border-left: 0.5rem solid var(--accent-pink);
     border-radius: 10px;
-    box-shadow: 0px 5px 2px var(--shadow);
+    box-shadow: 0px 2px 4px var(--shadow);
 }
 
 /* .card-container {
     background-color: white;
     border-radius: 10px;
+} */
+
+.card .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-icons {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+    margin-top: auto;
+}
+
+/* .card-icons img {
+    align-self: flex-end;
 } */
 
 #announcements {
