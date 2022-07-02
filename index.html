@@ -30,7 +30,7 @@
             <div class="greeting-container">
                 <img src="avatars/animal-1.png" alt="avatar" class="avatar">
                 <div>
-                    <p>Hi there,</p>
+                    <p id="greeting">Hi there,</p>
                     <p id="large-account-name">Morgan Oakley (@morgan)</p>
                 </div>
             </div>
@@ -101,11 +101,11 @@
     <div class="main">
 
         <div id="projects">
-            <p class="title">Your Projects</p>
+            <p class="main-title">Your Projects</p>
             <div class="card-container">
                 <div class="card">
                     <p class="title">Super Cool Project</p>
-                    <p>Sed tempus ut lacus ut scelerisque. Suspendisee sollicitudin nibh erat, id facicilisis felis accumsan nec.</p>
+                    <p class="text">Sed tempus ut lacus ut scelerisque. Suspendisee sollicitudin nibh erat, id facicilisis felis accumsan nec.</p>
                     <div class="card-icons">
                         <img src="icons/heart-outline.png" alt="heart">
                         <img src="icons/eye-plus-outline.png" alt="eye-plus-outline">
@@ -114,7 +114,7 @@
                 </div>
                 <div class="card">
                     <p class="title">Less Cool Project</p>
-                    <p>
+                    <p class="text">
                         Nullam condimentum ipsum et lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, 
                         facilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.
                     </p>
@@ -126,7 +126,7 @@
                 </div>
                 <div class="card">
                     <p class="title">Impossible App</p>
-                    <p>In hac habitasse platea dictumst. Vivamus dictum rutrum acru, a placerat velit sagittis id.</p>
+                    <p class="text">In hac habitasse platea dictumst. Vivamus dictum rutrum acru, a placerat velit sagittis id.</p>
                     <div class="card-icons">
                         <img src="icons/heart-outline.png" alt="heart">
                         <img src="icons/eye-plus-outline.png" alt="eye-plus-outline">
@@ -135,7 +135,7 @@
                 </div>
                 <div class="card">
                     <p class="title">Easy Peasy App</p>
-                    <p>
+                    <p class="text">
                         Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam. Curabitur dignissim
                         nisis in tortor commodo, ac bibendum magna tincidunt.
                     </p>
@@ -147,7 +147,7 @@
                 </div>
                 <div class="card">
                     <p class="title">Ad Blocker</p>
-                    <p>
+                    <p class="text">
                         Quisque eget rutrum nisi. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed
                         malesuada eros.
                     </p>
@@ -159,7 +159,7 @@
                 </div>
                 <div class="card">
                     <p class="title">Money Maker</p>
-                    <p>
+                    <p class="text">
                         Praesent convalis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus 
                         sit amet ex. Pellentesque mollis nec sem vel aliquam.
                     </p>
@@ -173,45 +173,53 @@
         </div>
 
         <div id="announcements">
-            <p class="title">Announcements</p>
-            <div class="card-container">
-                <div class="card">
+            <p class="main-title">Announcements</p>
+            <div class="card">
+                <div id="first-announcement">
                     <p class="title">Site Maintenance</p>
-                    <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue...</p>
+                    <p class="text">Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue...</p>
                 </div>
-                <div class="card">
+                <div id="second-announcement">
                     <p class="title">Community Share Day</p>
-                    <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan porttitor...</p>
+                    <p class="text">Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan porttitor...</p>
                 </div>
-                <div class="card">
+                <div>
                     <p class="title">Updated Privacy Policy</p>
-                    <p>Phaselius efficitur nisis eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis sem in mattis...</p>
+                    <p class="text">Phaselius efficitur nisis eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis sem in mattis...</p>
                 </div>
             </div>
         </div>
 
         <div id="trending">
-            <p class="title">Trending</p>
-            <div class="card-container">
-                <div class="card">
-                    <div class="avatar"></div>
-                    <p>@tegan</p>
-                    <p>World Peace Builder</p>
+            <p class="main-title">Trending</p>
+            <div class="card">
+                <div>
+                    <img src="avatars/animal-3.png" alt="avatar" class="avatar">
+                    <div class="trending-account">
+                        <p>@tegan</p>
+                        <p class="text">World Peace Builder</p>
+                    </div>
                 </div>
-                <div class="card">
-                    <div class="avatar"></div>
-                    <p>@morgan</p>
-                    <p>Super Cool Project</p>
+                <div>
+                    <img src="avatars/animal-1.png" alt="avatar" class="avatar">
+                    <div class="trending-account">
+                        <p>@morgan</p>
+                        <p class="text">Super Cool Project</p>
+                    </div>
                 </div>
-                <div class="card">
-                    <div class="avatar"></div>
-                    <p>@kendall</p>
-                    <p>Life Chanching App</p>
+                <div>
+                    <img src="avatars/animal-4.png" alt="avatar" class="avatar">
+                    <div class="trending-account">
+                        <p>@kendall</p>
+                        <p class="text">Life Chanching App</p>
+                    </div>
                 </div>
-                <div class="card">
-                    <div class="avatar"></div>
-                    <p>@alex</p>
-                    <p>No Traffic Maker</p>
+                <div>
+                    <img src="avatars/animal-5.png" alt="avatar" class="avatar">
+                    <div class="trending-account">
+                        <p>@alex</p>
+                        <p class="text">No Traffic Maker</p>
+                    </div>
                 </div>
             </div>
         </div>
