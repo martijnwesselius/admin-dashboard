@@ -31,7 +31,6 @@ body {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     padding: 1rem 4rem;
-    
 }
 
 .header img {
@@ -91,12 +90,9 @@ input[type="search"] {
     padding: 0.5rem 2rem;
 }
 
-.account-container p {
-    font-weight: bold;
-}
-
+.account-container .name,
 #greeting {
-    font-weight: bold;;
+    font-weight: bold;
 }
 
 #large-account-name {
@@ -184,6 +180,11 @@ button {
     padding-bottom: 1rem;
 }
 
+.title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -219,18 +220,12 @@ button {
     border-left: 0.5rem solid var(--accent-pink);
 }
 
-.card .title {
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
 .card-icons {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 1rem;
     margin-top: auto;
-    align-self: flex-end;
     cursor: pointer;
 }
 
@@ -246,7 +241,7 @@ button {
 
 #first-announcement,
 #second-announcement {
-    border-bottom: 2px solid var(--text-grey);
+    border-bottom: 1px solid var(--text-grey);
 }
 
 /* --> Trending */
@@ -265,4 +260,16 @@ button {
 
 #trending img {
    height: 3rem;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    /* body {
+        grid-template-columns: 1fr 8fr;
+    } */
+
+    .main {
+        overflow: visible;
+    }
 }
